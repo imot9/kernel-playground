@@ -1,0 +1,16 @@
+/dts-v1/;
+/plugin/;
+/ {
+  compatible = "chip";
+  fragment@0 {
+    target-path = "/";
+    __overlay__ {
+      my_device {
+        compatible = "mydev";
+        status = "okay";
+        label = "test";
+        value = <1>;
+      };
+    };
+  };
+};
